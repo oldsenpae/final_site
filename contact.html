@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Связаться</title>
+  </head>
+  <body>
+    <!--МЕНЮ-->
+    <nav class="nav_menu">
+      <div class="nav_logo">
+        <a href="./main.html"
+          ><img src="/img/sun.gif" width="60px" height="60px" alt="Icon"
+        /></a>
+      </div>
+      <div class="nav_links">
+        <a href="./main.html">Главная</a>
+        <a href="./portfolio.html">Портфолио</a>
+        <a href="./gallery.html">Галерея</a>
+        <a href="./services.html">Мои услуги</a>
+        <a href="./contact.html">Связаться</a>
+      </div>
+    </nav>
+    <!--МЕНЮ-->
+    <main class="main">
+      <!--ФОРМА ОБРАТНОЙ СВЯЗИ-->
+      <div id="form">
+        <div class="form_text">Связаться со мной</div>
+        <label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="*Имя"
+            required
+          />
+        </label>
+        <label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="*Email"
+            required
+          />
+        </label>
+        <label>
+          <input
+            type="text"
+            name="message"
+            id="message"
+            placeholder="*Ваше сообщение"
+            required
+          />
+        </label>
+        <button type="submit" id="submit">Отправить</button>
+      </div>
+      <!--ФОРМА ОБРАТНОЙ СВЯЗИ-->
+    </main>
+    <script src="/js/form_script.js"></script>
+  </body>
+</html>

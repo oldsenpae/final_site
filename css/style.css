@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "RobotoSlab";
+  src: local("RobotoSlab"), url(/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav_menu {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  font-family: "RobotoSlab", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  align-items: center;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0px 7px 8px 4px rgba(0, 0, 0, 0.25);
+}
+.nav_menu a {
+  text-decoration: none;
+  color: black;
+}
+.nav_menu a:hover {
+  text-decoration: none;
+  color: rgb(180, 62, 151);
+  transition: 1s;
+}
+.nav_logo {
+  margin-left: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.nav_links {
+  margin-right: 100px;
+  height: 24px;
+  flex-shrink: 1;
+  display: inline-block;
+}
+.nav_links a {
+  margin-left: 90px;
+}
+
+.main {
+  height: 1044px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    #abf2d8 14.58%,
+    #e79ad6 41.67%,
+    #f1d7eb 67.19%,
+    #fff 88.54%
+  );
+}
+
+.bg_container {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  background: url("/img/8351169.gif") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 0px -20px 20px 0px rgba(0, 0, 0, 0.75) inset;
+}
+
+.section_main {
+  width: 100%;
+  height: 544px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.section_main_p {
+  width: fit-content;
+  height: fit-content;
+  transform: translate(0, 50%);
+  padding: 25px;
+  margin: 23px;
+  flex-shrink: 0;
+  font-family: "RobotoSlab", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  z-index: 500;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.gallery_text {
+  width: fit-content;
+  height: fit-content;
+  transform: translate(0, -100%);
+  padding: 25px;
+  margin: 23px;
+  flex-shrink: 0;
+  font-family: "RobotoSlab", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  z-index: 500;
+}
+.gallery_text:hover {
+  font-size: 30px;
+  transition: 2s;
+}
+.slider-container {
+  transform: translate(0, -20%);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+.prev-button {
+  left: 10px;
+}
+.next-button {
+  right: 10px;
+}
+
+.carousel-inner h5,
+p {
+  color: black;
+  background-color: rgba(241, 215, 235, 0.658);
+}
+.portfolio_text {
+  transform: translate(0, 20%);
+  padding: 25px;
+  margin: 25px;
+  flex-shrink: 0;
+  font-family: "RobotoSlab", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  z-index: 500;
+}
+.main_portfolio {
+  height: 1044px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  background: linear-gradient(
+    180deg,
+    #abf2d8 14.58%,
+    #e79ad6 41.67%,
+    #f1d7eb 67.19%,
+    #fff 88.54%
+  );
+}
+.carousel {
+  margin: 50px 200px;
+}
+.about {
+  margin: 25px 50px;
+  flex-shrink: 0;
+  font-family: "RobotoSlab", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  text-decoration: none;
+  color: black;
+  z-index: 500;
+}
+.about img {
+  margin: 10px;
+}
+.about img:hover {
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+}
+
+#form {
+  transform: translate(0, -40%);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 416px;
+  height: 504px;
+  flex-shrink: 0;
+  border-radius: 42px;
+  background: white;
+  box-shadow: 0px 0px 11px 10px rgba(0, 0, 0, 0.25);
+}
+.form_text {
+  align-self: center;
+  padding: 20px;
+  color: #000000;
+  font-family: "RobotoSlab", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#name {
+  width: 327px;
+  height: 36px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+  background: rgba(46, 196, 182, 0.2);
+  border: none;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5) inset;
+}
+#email {
+  width: 327px;
+  height: 36px;
+  padding: 10px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+  background: rgba(46, 196, 182, 0.2);
+  border: none;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5) inset;
+}
+#message {
+  width: 327px;
+  height: 183px;
+  padding: 10px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+  background: rgba(46, 196, 182, 0.2);
+  border: none;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5) inset;
+}
+#submit {
+  width: 189px;
+  height: 36px;
+  margin-top: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #f5b9e8;
+  color: #000000;
+  font-family: "RobotoSlab", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+#submit:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  transform: translate(0, -35%);
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2) rotate(360deg);
+  }
+}
